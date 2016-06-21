@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>io.github.ethan-funny</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>0C6FC8D6-68D4-40ED-985E-5CDB488E94FC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E5577609-66C9-4F90-B0B7-B7288E68D068</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2C036F73-1607-4D96-BB4D-9D4A179FFE2D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A46409A6-F9A4-4BC8-8FB7-D5FDF62AC6C5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A7137F25-A24C-4AE8-906F-257585421600</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>8572F5B1-2813-4045-A5A4-C758F8F3E84F</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4A683A32-3477-49AE-B244-4F6B718B1EA0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6AD8AE63-A512-4351-94C4-51CC64E17FE1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>805D28F2-298F-42C5-961E-A3541D1BF50F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0C6FC8D6-68D4-40ED-985E-5CDB488E94FC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8572F5B1-2813-4045-A5A4-C758F8F3E84F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4A683A32-3477-49AE-B244-4F6B718B1EA0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A46409A6-F9A4-4BC8-8FB7-D5FDF62AC6C5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>57F66C94-A534-4C60-8F44-FCE787A7C96B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A7137F25-A24C-4AE8-906F-257585421600</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4A683A32-3477-49AE-B244-4F6B718B1EA0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>ethan-funny</string>
+	<key>description</key>
+	<string>Get google search results based on your query</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Google Search</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import sys
+
+port_str = "{query}"
+
+if port_str.isdigit():
+	with open('port', 'w') as outfile:
+		outfile.write(port_str)
+	sys.stdout.write('proxy port:' + port_str)
+else:
+	sys.stdout.write('fail')</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0C6FC8D6-68D4-40ED-985E-5CDB488E94FC</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>4</integer>
+				<key>keyword</key>
+				<string>gsc</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>echo '&lt;?xml version="1.0"?&gt;
+	 &lt;items&gt;
+	 &lt;item uid="goolesearch" arg="{query}" valid="yes"&gt;
+		&lt;title&gt;config proxy port&lt;/title&gt;
+		&lt;subtitle&gt;'\"{query}\"'&lt;/subtitle&gt;
+		&lt;icon&gt;icon.png&lt;/icon&gt;
+	 &lt;/item&gt; &lt;/items&gt;'
+exit</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Example: 1080, 1234, 0(disable socks proxy)</string>
+				<key>title</key>
+				<string>config socks proxy port</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>805D28F2-298F-42C5-961E-A3541D1BF50F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>config proxy port</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>E5577609-66C9-4F90-B0B7-B7288E68D068</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>57F66C94-A534-4C60-8F44-FCE787A7C96B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import sys
+
+query = "{query}"
+
+query_split = query.split(';')
+
+sys.stdout.write(query_split[1])</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A46409A6-F9A4-4BC8-8FB7-D5FDF62AC6C5</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import sys
+
+query = "{query}"
+
+query_split = query.split(';')
+
+sys.stdout.write(query_split[1])</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A7137F25-A24C-4AE8-906F-257585421600</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>36</integer>
+				<key>keyword</key>
+				<string>gs</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>searching...</string>
+				<key>script</key>
+				<string>python search.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Examples: linux, git</string>
+				<key>title</key>
+				<string>Enter search keyword</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>2C036F73-1607-4D96-BB4D-9D4A179FFE2D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>4A683A32-3477-49AE-B244-4F6B718B1EA0</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Copied to Clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>6AD8AE63-A512-4351-94C4-51CC64E17FE1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import sys
+
+query = "{query}"
+
+query_split = query.split(';')
+
+title = query_split[0]
+link = query_split[1]
+
+markdown_url = '[%s](%s)' % (title, link)
+
+sys.stdout.write(markdown_url)</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>8572F5B1-2813-4045-A5A4-C758F8F3E84F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string># Google Alfred 3 Workflow
+
+The missing Alfred 3 Workflow for obtaining google search results based on your query, with some handy tips.
+
+## Installation
+
+Download the [Google-Alfred3-Workflow.alfredworkflow](https://github.com/ethan-funny/Google-Alfred3-Workflow/raw/master/Google-Alfred3-Workflow.alfredworkflow) and import to Alfred 3.
+
+## Usage
+
+Keyword `gs`: get google search results based on your query.
+
+
+By default, the program runs without proxy. However, it may not work because some websites including google are blocked in some countries. Luckily, this workflow provides socks5 proxy so that the program can access google. To do this, you need to:
+
+- Enable the socks5 proxy on your computer firstly. You may refer to [shadowsocks](https://shadowsocks.org/en/index.html).
+- Launch Alfred and type `gsc` to configure your local socks proxy port.
+
+
+### Handy Tips
+
+In addition to get google search results, this workflow also provides some wonderful tips.
+
+- `Enter` key to open the selected item in default browser.
+- `command + Enter` key to copy the link of the selected item.
+- `option + Enter` key to copy the link with markdown format of the selected item.
+- `command + Y` key to quick look the selected item.
+
+
+## Copyright
+
+The MIT License (MIT)
+
+Copyright (c) 2016 [ethan-funny](https://github.com/ethan-funny)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</string>
+	<key>uidata</key>
+	<dict>
+		<key>0C6FC8D6-68D4-40ED-985E-5CDB488E94FC</key>
+		<dict>
+			<key>xpos</key>
+			<integer>290</integer>
+			<key>ypos</key>
+			<integer>20</integer>
+		</dict>
+		<key>2C036F73-1607-4D96-BB4D-9D4A179FFE2D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>30</integer>
+			<key>ypos</key>
+			<integer>290</integer>
+		</dict>
+		<key>4A683A32-3477-49AE-B244-4F6B718B1EA0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>490</integer>
+			<key>ypos</key>
+			<integer>350</integer>
+		</dict>
+		<key>57F66C94-A534-4C60-8F44-FCE787A7C96B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>490</integer>
+			<key>ypos</key>
+			<integer>160</integer>
+		</dict>
+		<key>6AD8AE63-A512-4351-94C4-51CC64E17FE1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>690</integer>
+			<key>ypos</key>
+			<integer>350</integer>
+		</dict>
+		<key>805D28F2-298F-42C5-961E-A3541D1BF50F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>30</integer>
+			<key>ypos</key>
+			<integer>20</integer>
+		</dict>
+		<key>8572F5B1-2813-4045-A5A4-C758F8F3E84F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>290</integer>
+			<key>ypos</key>
+			<integer>430</integer>
+		</dict>
+		<key>A46409A6-F9A4-4BC8-8FB7-D5FDF62AC6C5</key>
+		<dict>
+			<key>xpos</key>
+			<integer>290</integer>
+			<key>ypos</key>
+			<integer>160</integer>
+		</dict>
+		<key>A7137F25-A24C-4AE8-906F-257585421600</key>
+		<dict>
+			<key>xpos</key>
+			<integer>290</integer>
+			<key>ypos</key>
+			<integer>290</integer>
+		</dict>
+		<key>E5577609-66C9-4F90-B0B7-B7288E68D068</key>
+		<dict>
+			<key>xpos</key>
+			<integer>490</integer>
+			<key>ypos</key>
+			<integer>20</integer>
+		</dict>
+	</dict>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/ethan-funny/Google-Alfred3-Workflow</string>
+</dict>
+</plist>
