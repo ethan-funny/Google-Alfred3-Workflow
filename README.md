@@ -10,9 +10,9 @@ Download the [Google-Alfred3-Workflow.alfredworkflow](https://github.com/ethan-f
 
 Keyword `gs`: get google search results based on your query.
 
-![google-search-result-1](http://7xiht5.com1.z0.glb.clouddn.com/google-search-1.png-mintype)
+![google-search-result-1](http://7xiht5.com1.z0.glb.clouddn.com/google-search-1.png-ab)
 
-![google-search-result-2](http://7xiht5.com1.z0.glb.clouddn.com/google-search-2.png-mintype)
+![google-search-result-2](http://7xiht5.com1.z0.glb.clouddn.com/google-search-2.png-ab)
 
 By default, the program runs without proxy. However, it may not work because some websites including google are blocked in some countries. Luckily, this workflow provides socks5 proxy so that the program can access google. To do this, you need to:
 
