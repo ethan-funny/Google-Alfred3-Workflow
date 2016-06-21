@@ -22,11 +22,11 @@ By default, the program runs without proxy. However, it may not work because som
 
 ![configure proxy port](https://raw.github.com/ethan-funny/Google-Alfred3-Workflow/master/screenshots/config-proxy-port.png)
 
+If you want to disable socks proxy, use `gsc 0`.
 
 ### Handy Tips
 
 In addition to get google search results, this workflow also provides some wonderful tips.
-
 
 - `Enter` key to open the selected item in default browser.
 
