@@ -10,9 +10,9 @@ Download the [Google-Alfred3-Workflow.alfredworkflow](https://github.com/ethan-f
 
 Keyword `gs`: get google search results based on your query.
 
-![google-search-result-1](https://raw.github.com/ethan-funny/Google-Alfred3-Workflow/master/screenshots/google-search-1.png)
+![google-search-result-1](http://7xiht5.com1.z0.glb.clouddn.com/google-search-1.png)
 
-![google-search-result-1](https://raw.github.com/ethan-funny/Google-Alfred3-Workflow/master/screenshots/google-search-2.png)
+![google-search-result-2](http://7xiht5.com1.z0.glb.clouddn.com/google-search-2.png)
 
 By default, the program runs without proxy. However, it may not work because some websites including google are blocked in some countries. Luckily, this workflow provides socks5 proxy so that the program can access google. To do this, you need to:
 
@@ -20,7 +20,7 @@ By default, the program runs without proxy. However, it may not work because som
 
 - Launch Alfred and type `gsc` to configure your local socks proxy port.
 
-![configure proxy port](https://raw.github.com/ethan-funny/Google-Alfred3-Workflow/master/screenshots/config-proxy-port.png)
+![configure proxy port](http://7xiht5.com1.z0.glb.clouddn.com/config-proxy-port.png)
 
 If you want to disable socks proxy, use `gsc 0`.
 
@@ -32,11 +32,11 @@ In addition to get google search results, this workflow also provides some wonde
 
 - `command + Enter` key to copy the link of the selected item.
 
-![copy-link](https://raw.github.com/ethan-funny/Google-Alfred3-Workflow/master/screenshots/copy-link.png)
+![copy-link](http://7xiht5.com1.z0.glb.clouddn.com/copy-link.png)
 
 - `option + Enter` key to copy the link with markdown format of the selected item.
 
-![copy-link-with-markdown-format](https://raw.github.com/ethan-funny/Google-Alfred3-Workflow/master/screenshots/copy-link-with-markdown-format.png)
+![copy-link-with-markdown-format](http://7xiht5.com1.z0.glb.clouddn.com/copy-link-with-markdown-format.png)
 
 - `command + Y` key to quick look the selected item.
 
