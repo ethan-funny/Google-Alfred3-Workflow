@@ -38,8 +38,6 @@ In addition to get google search results, this workflow also provides some wonde
 
 ![copy-link-with-markdown-format](http://7xiht5.com1.z0.glb.clouddn.com/copy-link-with-markdown-format.png)
 
-- `command + Y` key to quick look the selected item.
-
 
 ## Copyright
 
