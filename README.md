@@ -1,6 +1,6 @@
 # Google Alfred 3 Workflow
 
-The missing Alfred 3 Workflow for obtaining google search results based on your query, with some handy tips.
+> The missing Alfred 3 Workflow for obtaining google search results based on your query, with some handy tips.
 
 ## Installation
 
