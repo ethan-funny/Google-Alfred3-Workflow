@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# 
+#
 # Copyright © 2016 ethan-funny (http://funhacks.net)
 #
 # MIT Licence. See http://opensource.org/licenses/MIT
@@ -22,9 +22,9 @@ class GoogleSearch:
     def __init__(self, query, port):
 
         self.query = query.encode('utf-8')
-        self.url = u"http://www.google.com/search?" + urlencode({'q': self.query})
+        self.url = u"http://www.google.com/search?" + urlencode({'q': self.query}) + u"&pws=0&gl=us&gws_rd=cr"
         self.header = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
-        self.SOCKS5_PROXY_HOST = '127.0.0.1' 
+        self.SOCKS5_PROXY_HOST = '127.0.0.1'
         self.SOCKS5_PROXY_PORT = port
 
     def get_html_source(self):
