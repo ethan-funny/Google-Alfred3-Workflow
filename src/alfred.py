@@ -32,11 +32,12 @@ class Item(object):
         else:
             return dict(map(unicode, item) for item in items)
 
-    def __init__(self, attributes, title, subtitle, icon=None):
+    def __init__(self, attributes, title, subtitle, icon=None, quicklookurl=None):
         self.attributes = attributes
         self.title = title
         self.subtitle = subtitle
         self.icon = icon
+        self.quicklookurl = quicklookurl
 
     def __str__(self):
         return tostring(self.xml(), encoding='utf-8')
