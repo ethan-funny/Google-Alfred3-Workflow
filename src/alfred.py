@@ -43,7 +43,7 @@ class Item(object):
 
     def xml(self):
         item = Element(u'item', self.unicode(self.attributes))
-        for attribute in (u'title', u'subtitle', u'icon'):
+        for attribute in (u'title', u'subtitle', u'icon', u'quicklookurl'):
             value = getattr(self, attribute)
             if value is None:
                 continue
