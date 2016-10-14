@@ -41,6 +41,7 @@ def alfred_items_for_query(query):
                 'arg': query + ';' + href,
             },
             icon='icon.png',
+            quicklookurl=href,
         ))
 
         index += 1
