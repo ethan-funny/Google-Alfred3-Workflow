@@ -32,18 +32,19 @@ class Item(object):
         else:
             return dict(map(unicode, item) for item in items)
 
-    def __init__(self, attributes, title, subtitle, icon=None):
+    def __init__(self, attributes, title, subtitle, icon=None, quicklookurl=None):
         self.attributes = attributes
         self.title = title
         self.subtitle = subtitle
         self.icon = icon
+        self.quicklookurl = quicklookurl
 
     def __str__(self):
         return tostring(self.xml(), encoding='utf-8')
 
     def xml(self):
         item = Element(u'item', self.unicode(self.attributes))
-        for attribute in (u'title', u'subtitle', u'icon'):
+        for attribute in (u'title', u'subtitle', u'icon', u'quicklookurl'):
             value = getattr(self, attribute)
             if value is None:
                 continue
