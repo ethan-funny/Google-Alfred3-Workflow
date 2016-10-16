@@ -1,4 +1,4 @@
-[中文版](./README_cn.md)
+[中文 README](./README_cn.md)
  
 # Google Alfred 3 Workflow
 
@@ -6,9 +6,11 @@
 
 ## Installation
 
-Download the [Google-Alfred3-Workflow.alfredworkflow](https://github.com/ethan-funny/Google-Alfred3-Workflow/raw/master/Google-Alfred3-Workflow.alfredworkflow) and import to Alfred 3.
+Download the [Google-Alfred3-Workflow.alfredworkflow](https://github.com/ethan-funny/Google-Alfred3-Workflow/raw/master/Google-Alfred3-Workflow.alfredworkflow) and import it to Alfred 3.
 
 ## Usage
+
+Before usage, make sure that you are using `Alfred 3`.
 
 Keyword `gs`: get google search results based on your query.
 
@@ -26,11 +28,15 @@ By default, the program runs without proxy. However, it may not work because som
 
 If you want to disable socks proxy, use `gsc 0`.
 
-### Handy Tips
+## Handy Tips
 
 In addition to get google search results, this workflow also provides some wonderful tips.
 
 - `Enter` key to open the selected item in default browser.
+
+- `Command + Y` key to quicklook
+
+![quicklook](https://raw.github.com/ethan-funny/Google-Alfred3-Workflow/master/screenshots/quicklook.png)
 
 - `command + Enter` key to copy the link of the selected item.
 
