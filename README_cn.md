@@ -1,10 +1,48 @@
-# Google Alfred 3 Workflow
+目录
+===
 
-## 安装
+* [安装](#安装)
+* [配置](#配置)
+* [使用](#使用)
+* [存在的问题](#存在的问题)
 
-下载 [Google-Alfred3-Workflow.alfredworkflow](https://github.com/ethan-funny/Google-Alfred3-Workflow/raw/master/Google-Alfred3-Workflow.alfredworkflow)，然后双击将其导入 **Alfred 3** (该插件目前只支持 Alfred 3)。
 
-## 使用
+# 安装
+
+下载 [Google-Alfred3-Workflow.alfredworkflow](https://github.com/ethan-funny/Google-Alfred3-Workflow/raw/master/Google-Alfred3-Workflow.alfredworkflow)，然后双击将其导入 **Alfred 3**。
+
+# 配置
+
+本插件需要访问 google，因为众所周知的原因，所以在使用之前，需要先进行配置。
+
+- **如果你使用的是 [Surge](http://nssurge.com/)**，你可以将它设置为 `系统代理`，然后就可以使用了，比如使用 `gs react` 进行搜索，可在 [Surge](http://nssurge.com/) 的 dashboard 界面看到请求记录：
+
+![surge](http://i.imgur.com/aPPeWq1.png)
+
+- **如果你使用的是 VPN**，也可以直接使用
+
+- **如果你使用的是 shadowsocks**，可以参考下面的配置
+
+本插件提供了 `socks5` 代理的设置，以便可以访问谷歌，这就需要你本机已经配置好了 `socks` 代理。如果你用 [shadowsocks](https://shadowsocks.com/)，本机电脑使用的是 `GoAgentX`，`GoAgentX` 的配置类似如下：
+
+![goagentx](http://7xiht5.com1.z0.glb.clouddn.com/goagentx.png-ab)
+
+Alfred 插件的配置只需要配置本地的代理端口，比如 GoAgentX 中的本地端口是 1234，那么 Alfred 插件的代理端口也要配置 1234，输入 `gsc 1234`，如下：
+
+![configure proxy port](https://raw.github.com/ethan-funny/Google-Alfred3-Workflow/master/screenshots/config-proxy-port.png)
+
+配置好后，使用 `gs react` 进行搜索，应该可以在 GoAgentX 中看到请求记录，如下：
+
+![goagentx](http://i.imgur.com/qmSXmOb.png)
+
+**如果你不想用 socks 代理的话（默认是关闭的），你可以输入 `gsc 0`。**
+
+# 使用
+
+在使用之前请确保：
+
+- 使用 `Alfred 3` 而不是 `Alfred 2`
+- 可以科学上网
 
 触发关键字 `gs`: 根据提供的关键词进行搜索，并给出搜索结果，如下：
 
@@ -12,32 +50,29 @@
 
 ![google-search-result-2](https://raw.github.com/ethan-funny/Google-Alfred3-Workflow/master/screenshots/google-search-2.png)
 
-## 配置
+# 一些技巧
 
-由于我们不能直接访问谷歌，所以插件也提供了 `socks5` 代理的设置，以便可以访问谷歌，这就需要你本机已经配置好了 `socks` 代理，这应该也是必备的吧。比如我用的是 [shadowsocks](https://shadowsocks.com/)，本机电脑使用的是 `GoAgentX`，`GoAgentX` 的配置类似如下：
+- `Enter` 键直接在浏览器打开选中的链接
 
-![goagentx](http://7xiht5.com1.z0.glb.clouddn.com/goagentx.png-ab)
+- `Command + y` 键可以对链接的内容进行预览
 
-Alfred 插件的配置只需要配置本地的代理端口，比如 GoAgentX 中的本地端口是 1234，那么 Alfred 插件的代理端口也要配置 1234，如下：
+![quicklook](https://raw.github.com/ethan-funny/Google-Alfred3-Workflow/master/screenshots/quicklook.png)
 
-![configure proxy port](https://raw.github.com/ethan-funny/Google-Alfred3-Workflow/master/screenshots/config-proxy-port.png)
-
-如果你不想用 socks 代理的话（默认是不启用的），你可以输入 `gsc 0`。
-
-### 一些有用的 tips
-
-- `Enter` 键在浏览器打开该链接.
-
-- `command + Enter` 键复制选中的链接，普通形式
+- `Command + Enter` 键直接复制选中的链接
 
 ![copy-link](https://raw.github.com/ethan-funny/Google-Alfred3-Workflow/master/screenshots/copy-link.png)
 
-- `option + Enter` 键复制选择的链接，markdown 形式
+- `Option + Enter` 键用 `markdown` 形式复制选中的链接
 
 ![copy-link-with-markdown-format](https://raw.github.com/ethan-funny/Google-Alfred3-Workflow/master/screenshots/copy-link-with-markdown-format.png)
 
 
-## Copyright
+# 存在的问题
+
+- 目前插件还不是很完善，发现如果使用 `GoAgentX + shadowsocks`，有时会搜不出结果，期待你的 `pull request`.
+
+
+# Copyright
 
 The MIT License (MIT)
 
