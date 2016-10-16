@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 #
-# Copyright © 2016 ethan-funny (http://funhacks.net)
+# Copyright © 2016 ethan-funny (https://github.com/ethan-funny)
 #
 # MIT Licence. See http://opensource.org/licenses/MIT
 #
 # Created on 2016-06-18
-#
+# Updated on 2016-10-16
 
 
 import socket
@@ -15,6 +15,7 @@ from urllib import urlencode
 from HTMLParser import HTMLParser
 
 from PySocks import socks
+from PySocks.sockshandler import SocksiPyHandler
 
 
 class GoogleSearch:
@@ -22,7 +23,8 @@ class GoogleSearch:
     def __init__(self, query, port):
 
         self.query = query.encode('utf-8')
-        self.url = u"http://www.google.com/search?" + urlencode({'q': self.query}) + u"&pws=0&gl=us&gws_rd=cr"
+        self.url = u"http://www.google.com/search?" + \
+            urlencode({'q': self.query}) + u"&pws=0&gl=us&gws_rd=cr"
         self.header = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
         self.SOCKS5_PROXY_HOST = '127.0.0.1'
         self.SOCKS5_PROXY_PORT = port
@@ -36,11 +38,15 @@ class GoogleSearch:
                 request.add_header("User-Agent", self.header)
                 html_source = urllib2.urlopen(request).read()
             else:
-                socks.set_default_proxy(socks.SOCKS5, self.SOCKS5_PROXY_HOST, self.SOCKS5_PROXY_PORT)
-                socket.socket = socks.socksocket
-                request = urllib2.Request(self.url)
-                request.add_header("User-Agent", self.header)
-                html_source = urllib2.urlopen(request).read()
+                handler = SocksiPyHandler(
+                    socks.SOCKS5,
+                    self.SOCKS5_PROXY_HOST,
+                    self.SOCKS5_PROXY_PORT
+                )
+                opener = urllib2.build_opener(handler)
+                opener.addheaders = [('User-agent', self.header)]
+                res = opener.open(self.url)
+                html_source = res.read()
         except Exception as e:
             print e
 
@@ -111,3 +117,4 @@ def search(query, port):
 
 if __name__ == '__main__':
     result_info = search('linux', 1234)
+    print result_info
