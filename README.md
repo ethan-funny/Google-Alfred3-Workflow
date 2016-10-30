@@ -48,6 +48,20 @@ In addition to get google search results, this workflow also provides some wonde
 
 ![copy-link-with-markdown-format](https://raw.github.com/ethan-funny/Google-Alfred3-Workflow/master/screenshots/copy-link-with-markdown-format.png)
 
+## ChangeLog
+
+### v1.2 (2016-10-30)
+
+- bug fixed
+- use the copy string as query keyword
+
+### v1.1 (2016-10-16)
+
+- add quicklook utility
+
+### v1.0 (2016-06-21)
+
+- release version 1.0
 
 ## Copyright
 
