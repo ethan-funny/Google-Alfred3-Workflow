@@ -8,7 +8,7 @@
 # Updated on 2016-10-16
 
 import alfred
-from google import google
+from alfred_google import google
 
 
 def process(query):
