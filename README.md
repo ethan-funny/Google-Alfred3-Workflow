@@ -14,6 +14,8 @@ Before usage, make sure that you are using `Alfred 3`.
 
 Keyword `gs`: get google search results based on your query.
 
+If you don't give a keyword, the workflow will use the lastest string you copy.
+
 ![google-search-result-1](https://raw.github.com/ethan-funny/Google-Alfred3-Workflow/master/screenshots/google-search-1.png)
 
 ![google-search-result-2](https://raw.github.com/ethan-funny/Google-Alfred3-Workflow/master/screenshots/google-search-2.png)
