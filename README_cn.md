@@ -44,7 +44,7 @@ Alfred 插件的配置只需要配置本地的代理端口，比如 GoAgentX 中
 - 使用 `Alfred 3` 而不是 `Alfred 2`
 - 可以科学上网
 
-触发关键字 `gs`: 根据提供的关键词进行搜索，并给出搜索结果，如下：
+触发关键字 `gs`: 根据提供的关键词进行搜索，并给出搜索结果，如果你没有给出关键字，插件会自动使用你最近拷贝的字符作为关键词。
 
 ![google-search-result-1](https://raw.github.com/ethan-funny/Google-Alfred3-Workflow/master/screenshots/google-search-1.png)
 
