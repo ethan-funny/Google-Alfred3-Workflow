@@ -51,8 +51,8 @@ def alfred_items_for_query(query):
 
 if __name__ == '__main__':
     try:
-        query_str = alfred.args()[0]
-    except IndexError:
+        query_str = ''.join(alfred.args())
+    except:
         query_str = None
 
     process(query_str)
