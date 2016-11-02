@@ -1,8 +1,8 @@
-[中文 README](./README_cn.md)
- 
 # Google Alfred 3 Workflow
 
 > The missing Alfred 3 Workflow for obtaining google search results based on your query, with some handy tips.
+
+README: [English](./README.md) | [中文](./README-zh.md)
 
 ## Installation
 
