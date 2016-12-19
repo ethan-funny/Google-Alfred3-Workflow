@@ -5,10 +5,10 @@
 # MIT Licence. See http://opensource.org/licenses/MIT
 #
 # Created on 2016-06-18
-# Updated on 2016-10-16
+# Updated on 2016-12-19
 
 import alfred
-from alfred_google import google
+from alfred_google import gsearch
 
 
 def process(query):
@@ -28,7 +28,7 @@ def alfred_items_for_query(query):
     with open('port', 'r') as infile:
         port = int(infile.read())
 
-    search_results = google.search(query, port)
+    search_results = gsearch.search(query, port)
     for result in search_results:
         title = result.get('title', '').decode('utf-8')
         href = result.get('href', '').decode('utf-8')
@@ -40,8 +40,8 @@ def alfred_items_for_query(query):
                 'uid': alfred.uid(index),
                 'arg': title + ';' + href,
             },
-            icon='icon.png',
             quicklookurl=href,
+            icon='icon.png',
         ))
 
         index += 1

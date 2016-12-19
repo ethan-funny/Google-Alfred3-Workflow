@@ -1,1 +1,1 @@
-from google import search
+from gsearch import search
