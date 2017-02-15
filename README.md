@@ -1,5 +1,9 @@
 # Google Alfred 3 Workflow
 
+![Version](https://img.shields.io/badge/version-1.2-brightgreen.svg)
+[![MIT Licence](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/ethan-funny/Google-Alfred3-Workflow/master/LICENSE)
+[![Analytics](https://ga-beacon.appspot.com/UA-62960961-2/google-alfred3-workflow/readme)](https://github.com/igrigorik/ga-beacon)
+
 > The missing Alfred 3 Workflow for obtaining google search results based on your query, with some handy tips.
 
 README: [English](./README.md) | [中文](./README-zh.md)
@@ -74,5 +78,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
